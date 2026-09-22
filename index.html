@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ganesan Balasubramanian — Video Editor & AI Artist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080c15;--fg:#f1f4fc;--muted:#a3acc1;--line:#283044;--lime:#5cc8ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 'DM Sans',sans-serif}
+a{color:inherit;text-decoration:none}a:hover{color:var(--lime)}
+.wrap{width:min(1280px,calc(100% - 112px));margin:auto}.header{display:flex;align-items:center;justify-content:space-between;min-height:112px;border-bottom:1px solid var(--line)}
+.wordmark{font:800 52px/1 'Manrope',sans-serif;letter-spacing:-5px}.wordmark span{color:var(--lime)}
+nav{display:flex;gap:38px}nav a,.contact-nav{font-size:14px}.contact-nav span{margin-left:18px}
+.hero{padding-top:54px}.eyebrow,.section-label,.toolbox>span{font-size:12px;letter-spacing:1.4px;font-weight:500}.hero-label{display:flex;justify-content:space-between}.hero-label span{color:var(--muted)}
+h1,h2,h3,h4{font-family:'Manrope',sans-serif;margin-top:0}h1{font-size:clamp(55px,7.4vw,106px);font-weight:500;line-height:1.08;letter-spacing:-.065em;margin:43px 0 33px}h1 span{background:linear-gradient(105deg,#36bfff,#a579f5);background-clip:text;-webkit-background-clip:text;color:transparent}
+.hero-bottom{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:52px}.hero-bottom p{color:#adb7cd;margin:0;font-size:17px;line-height:1.6}
+.button{display:inline-flex;align-items:center;gap:44px;padding:17px 23px;font-size:15px;font-weight:600;border-radius:3px}.lime{background:var(--lime);color:#07121c}.button span{font-size:22px}
+.featured-art{margin:0}.featured-art img{width:100%;display:block;border:1px solid var(--line)}.featured-art figcaption{display:flex;justify-content:space-between;gap:24px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}.featured-art .eyebrow{color:var(--lime);font-size:11px}.featured-art h3{font-size:22px;font-weight:500;margin:6px 0}.featured-art p{color:var(--muted);font-size:14px;margin:0}
+.section{padding-block:91px}.section-label{display:flex;justify-content:space-between;color:var(--muted);margin-bottom:45px}.section-label>span:first-child{color:var(--lime)}
+h2{font-size:clamp(34px,4vw,52px);line-height:1.2;letter-spacing:-.045em;font-weight:500;margin-bottom:39px}
+.about{border-bottom:1px solid var(--line)}.about-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:80px}.about-copy{color:#adb7cd}.about-copy p{margin-bottom:22px;max-width:510px;font-size:17px}.about-copy p:first-child{color:var(--fg);font-size:21px;line-height:1.6}
+.years{display:flex;gap:22px;align-items:center;margin-top:37px}.years strong{font:500 82px/1 'Manrope',sans-serif;letter-spacing:-.065em}.years strong span{color:var(--lime);font-size:60px}.years>span{font-size:12px;letter-spacing:1px;color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:58px}.services article{border-top:1px solid var(--line);padding-top:24px}.service-number{font-size:13px;color:var(--lime)}.services h3{font-size:25px;font-weight:500;margin:22px 0 14px}.services p{color:var(--muted);line-height:1.75}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:23px}.tags span{font-size:12px;border:1px solid #34415c;border-radius:2px;padding:4px 9px;color:#bccbe4}
+.toolbox{display:flex;gap:45px;align-items:center;border-block:1px solid var(--line);margin-top:55px;padding-block:24px}.toolbox>span{color:var(--muted)}.toolbox p{margin:0;color:#c6d3ea}.toolbox b{padding:0 14px;font-weight:400;color:#677d9d}
+.experience{padding-top:0}.career{margin-top:52px}.career article{display:grid;grid-template-columns:1fr 1.3fr auto;gap:35px;border-top:1px solid var(--line);padding:29px 0}.career-company h3{font-size:22px;font-weight:600;margin-bottom:9px}.current{font-size:11px;letter-spacing:1px;color:var(--lime);padding:4px 7px;background:#15263c}.career h4{font-size:16px;font-weight:500;margin-bottom:8px}.career p{font-size:14px;color:var(--muted);max-width:390px;line-height:1.7;margin:0}.career time{font-size:12px;color:var(--muted);padding-top:4px;white-space:nowrap}
+details{border-block:1px solid var(--line)}summary{cursor:pointer;padding:22px 0;font-size:14px}summary span{float:right;color:var(--muted);font-size:12px}.earlier{padding-bottom:16px}.earlier p{display:grid;grid-template-columns:1fr 1.3fr auto;gap:35px;font-size:14px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted)}.earlier strong{color:var(--fg);font-weight:500}
+.contact{background:linear-gradient(110deg,#6bcaff,#b09af1);color:#09152d;padding-block:53px 66px}.contact .section-label,.contact .section-label>span:first-child{color:#1c3558}.contact h2{font-size:clamp(60px,8.5vw,112px);line-height:1.06;letter-spacing:-.065em;margin:45px 0}.contact h2 span{font-family:Georgia,serif;font-style:italic}.contact-bottom{display:flex;align-items:center;justify-content:space-between;gap:25px;border-top:1px solid #568eb8;padding-top:27px}.contact-bottom p{margin:0;font-size:22px}.contact-bottom a{font-size:clamp(16px,2vw,25px);border-bottom:1px solid #09152d}
+footer{display:flex;align-items:center;gap:25px;padding-block:39px}footer p{font-size:13px;line-height:1.6;margin:0}footer p span{color:var(--muted)}.social-links{display:flex;gap:24px;margin-left:auto;font-size:14px}
+@media(max-width:1000px){.wrap{width:calc(100% - 64px)}.about-grid{gap:40px}.services{gap:24px}.career article{grid-template-columns:1fr 1.25fr}.career time{grid-column:2}.earlier p{grid-template-columns:1fr 1fr}.earlier p span:last-child{grid-column:2}.toolbox{gap:25px}.section-note{display:none}}
+@media(max-width:650px){.wrap{width:calc(100% - 40px)}.header{min-height:85px}.wordmark{font-size:44px}nav{gap:18px}nav a{font-size:13px}.contact-nav{display:none}.hero{padding-top:32px}.hero-label{font-size:10px}.hero-label span{max-width:76px;text-align:right}h1{font-size:clamp(37px,9.2vw,60px);margin-top:34px}.hero-bottom{align-items:start;flex-direction:column;gap:24px;margin-bottom:34px}.hero-bottom p{font-size:16px}.button{padding:13px 19px}.section{padding-block:62px}.section-label{margin-bottom:30px;font-size:11px}.about-grid{grid-template-columns:1fr;gap:32px}.about-copy p:first-child{font-size:20px}.about-copy p{font-size:16px}.years{margin-top:25px}.years strong{font-size:68px}.services{grid-template-columns:1fr;gap:34px;margin-top:35px}.services h3{margin-top:14px}.toolbox{align-items:start;flex-direction:column;gap:12px;margin-top:35px}.toolbox p{line-height:2}.career{margin-top:35px}.career article{grid-template-columns:1fr;gap:13px;padding-block:24px}.career time{grid-column:1}.career-company{display:flex;align-items:center;gap:15px}.career-company h3{margin:0}.earlier p{grid-template-columns:1fr;gap:4px}.earlier p span:last-child{grid-column:1}.contact{padding-block:35px 40px}.contact h2{margin-block:34px;font-size:66px}.contact-bottom{align-items:start;flex-direction:column;gap:20px}.contact-bottom a{font-size:17px}.featured-art figcaption{flex-direction:column;align-items:start;gap:15px}footer{flex-wrap:wrap}.social-links{width:100%;padding-top:12px;margin-left:0}}
+</style>
+</head>
+<body>
+<header class="header wrap">
+<a class="wordmark" href="#top">g<span>.</span></a>
+<nav><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a></nav>
+<a class="contact-nav" href="mailto:framebyganesan@gmail.com">Let’s talk <span>↗</span></a>
+</header>
+
+<main id="top">
+<section class="hero wrap">
+<div class="eyebrow hero-label"><span>GANESAN BALASUBRAMANIAN</span><span>BENGALURU, INDIA</span></div>
+<h1>Creating visual stories<br><span>that connect.</span></h1>
+<div class="hero-bottom">
+<p>Senior video editor. AI artist. Creative director.<br>I turn ideas into visual stories through editing,<br>motion, and generative AI.</p>
+<a class="button lime" href="https://rumble.com/c/c-6859252" target="_blank">Explore my work <span>↗</span></a>
+</div>
+<figure class="featured-art" id="work">
+<!-- Replace the image URL below with your portfolio banner image -->
+<img src="visual-stories.png" alt="Creating visual stories that connect. Ganesan’s portfolio banner.">
+<figcaption><div><span class="eyebrow">FEATURED ARTWORK</span><h3>Creating visual stories that connect</h3><p>AI artist · Video editor · Multimedia producer</p></div><a href="https://rumble.com/c/c-6859252" target="_blank">View full artwork ↗</a></figcaption>
+</figure>
+</section>
+
+<section class="about wrap section" id="about">
+<div class="section-label"><span>01 / ABOUT</span><span class="section-note">THE PERSON BEHIND THE FRAME</span></div>
+<div class="about-grid"><div><h2>An editor’s instinct.<br>An artist’s curiosity.</h2><div class="years"><strong>15<span>+</span></strong><span>YEARS OF<br>VISUAL STORYTELLING</span></div></div>
+<div class="about-copy"><p>I’m Ganesan, a video editor and AI artist based in Bengaluru. My work spans e-commerce, broadcast, corporate films, and digital media.</p><p>From fashion stories at Myntra to AI-powered advertising at Quickads, I bring storytelling, technical craft, and creative direction to every stage of production.</p><p>I combine traditional post-production with emerging AI tools to take an idea from its first concept to the final frame.</p></div></div>
+</section>
+
+<section class="expertise wrap section">
+<div class="section-label"><span>02 / WHAT I DO</span><span class="section-note">FROM CONCEPT TO FINAL CUT</span></div>
+<h2>Creative vision.<br>Hands-on craft.</h2>
+<div class="services">
+<article><span class="service-number">01</span><h3>Video editing</h3><p>Story-led editing for brand campaigns, fashion, product showcases, corporate films, and digital content.</p><div class="tags"><span>Post-production</span><span>Color grading</span><span>Audio mastering</span></div></article>
+<article><span class="service-number">02</span><h3>AI art & motion</h3><p>AI-generated visuals and video assets, shaped through prompt engineering and refined in post-production.</p><div class="tags"><span>Generative AI</span><span>Motion graphics</span><span>VFX</span></div></article>
+<article><span class="service-number">03</span><h3>Creative direction</h3><p>Concept development, shoot direction, and team leadership to carry a consistent vision through delivery.</p><div class="tags"><span>Visual storytelling</span><span>Brand campaigns</span></div></article>
+</div>
+<div class="toolbox"><span>MY TOOLKIT</span><p>Premiere Pro <b>·</b> After Effects <b>·</b> Photoshop <b>·</b> Illustrator <b>·</b> Final Cut Pro</p></div>
+</section>
+
+<section class="experience wrap section" id="experience">
+<div class="section-label"><span>03 / EXPERIENCE</span><span class="section-note">A CAREER IN MOVING IMAGES</span></div>
+<h2>Where I’ve made<br>things move.</h2>
+<div class="career">
+<article><div class="career-company"><h3>Quickads</h3><span class="current">CURRENT</span></div><div><h4>AI Artist & Video Editor</h4><p>AI-generated creative assets and video content for digital advertising campaigns.</p></div><time>Oct 2025 — Present</time></article>
+<article><div class="career-company"><h3>Myntra</h3></div><div><h4>Video Editor</h4><p>Fashion editorials, product showcases, and brand campaigns for e-commerce.</p></div><time>Aug 2021 — Apr 2024</time></article>
+<article><div class="career-company"><h3>Nvest Technologies</h3></div><div><h4>Senior Video Editor & Creative Director</h4><p>Creative direction, team mentoring, on-location shoots, and end-to-end post-production.</p></div><time>Jul 2019 — Nov 2020</time></article>
+<article><div class="career-company"><h3>Cinimage Studios</h3></div><div><h4>Senior Video Editor</h4><p>Promotional videos, short films, and corporate storytelling.</p></div><time>Jun 2018 — Jun 2019</time></article>
+</div>
+<details><summary>Earlier chapters <span>2010 — 2018</span></summary><div class="earlier">
+<p><strong>Liveday</strong><span>Senior Video Editor</span><span>May 2016 — Mar 2018</span></p>
+<p><strong>Inner Eye World Films</strong><span>Video Editor · Contract</span><span>Jan 2015 — Jun 2015</span></p>
+<p><strong>Sri Shankara TV</strong><span>Video Editor</span><span>Dec 2013 — Dec 2014</span></p>
+<p><strong>Life Media Teamwork</strong><span>Assistant Video Editor</span><span>May 2010 — Nov 2013</span></p>
+</div></details>
+</section>
+
+<section class="contact section">
+<div class="wrap">
+<div class="section-label"><span>04 / LET’S CONNECT</span><span>BENGALURU, INDIA</span></div>
+<h2>Have a story<br>in mind<span>?</span></h2>
+<div class="contact-bottom"><p>Let’s bring it to life.</p><a href="mailto:framebyganesan@gmail.com">framebyganesan@gmail.com ↗</a></div>
+</div>
+</section>
+</main>
+
+<footer class="wrap">
+<a class="wordmark" href="#top">g<span>.</span></a>
+<p>Ganesan Balasubramanian<br><span>Video Editor & AI Artist</span></p>
+<div class="social-links"><a href="https://www.linkedin.com/in/ganesan-b/" target="_blank">LinkedIn ↗</a><a href="https://rumble.com/c/c-6859252" target="_blank">Rumble ↗</a></div>
+</footer>
+</body>
+</html>
